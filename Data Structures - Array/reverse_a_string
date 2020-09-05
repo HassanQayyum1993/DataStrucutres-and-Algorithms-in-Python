@@ -1,0 +1,9 @@
+def reverse(string):
+  new_str = ""
+  j = 0
+  for i in range(len(string)-1,-1,-1): #i = 12-1; i>-1; i-- 
+    new_str += string[i]
+    j = j+1
+  print(new_str)
+
+reverse("Hi hello how are you")
