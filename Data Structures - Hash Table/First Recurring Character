@@ -1,0 +1,17 @@
+
+def first_reccuring():
+  arr = [1,2,3,4,7,6,9]
+  myset = {} 
+  l = len(arr)
+
+  for i in range (0,l):
+    if not (myset.has_key(arr[i])):
+      myset.update({arr[i]:i})
+    else:
+      print(arr[i])
+      break
+    
+  else:
+    print("undefined")
+  
+first_reccuring()
