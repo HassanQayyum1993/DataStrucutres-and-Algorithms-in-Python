@@ -1,0 +1,15 @@
+def BFS2(self):
+        mylist = []
+        queue = []
+        temp_node = self.root
+        queue.append(temp_node)
+        
+        while len(queue) > 0:
+            temp_node = queue.pop(0)
+            mylist.append(temp_node.data)
+            if temp_node.left:
+                queue.append(temp_node.left)
+            if temp_node.right:
+                queue.append(temp_node.right)
+        
+        return mylist
