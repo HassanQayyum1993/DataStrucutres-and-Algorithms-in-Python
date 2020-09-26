@@ -1,0 +1,13 @@
+    def BFS2R(self, queue, my_list):
+        
+        if len(queue) == 0:
+            return my_list
+        
+        temp_node = queue.pop(0)
+        my_list.append(temp_node.data)
+        if temp_node.left:
+            queue.append(temp_node.left)
+        if temp_node.right:
+            queue.append(temp_node.right)
+        
+        return self.BFS2R(queue, my_list)
